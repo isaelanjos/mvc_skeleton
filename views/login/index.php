@@ -1,15 +1,12 @@
 <?php 
-	if (!defined('HOSTNAME')) exit;
-	if (isset($_SESSION['login']) && !empty($_SESSION['login'])) 
-	{
-		header('location: ./home.php');
-	}
+	if (!defined('KEY')) exit;
+	check_session_login();
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title><?php echo TITLE; ?></title>
+	<title><?php echo $this->title; ?></title>
 	<link rel="stylesheet" type="text/css" href="./vendor/twbs/bootstrap/dist/css/bootstrap.min.css">	
 	<style type="text/css">
 		body {
@@ -45,7 +42,7 @@
 		}
 
 		.form-signin input[type="text"] {
-		  margin-bottom: -1px;
+		  margin-bottom: 0px;
 		  border-radius: 5px;
 		  border-bottom-left-radius: 0px;
 		  border-bottom-right-radius: 0px;

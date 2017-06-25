@@ -1,0 +1,21 @@
+{
+    "name": "ira/mvc-zero",
+    "description": "Skel MVC Default",
+    "type": "project",
+    "require": {
+        "twbs/bootstrap": "^3.3",
+        "components/jquery": "^3.2",
+        "doctrine/orm": "^2.5"
+    },
+    "authors": [
+        {
+            "name": "Isael Anjos",
+            "email": "isael.r.anjos@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload":
+	{
+		"psr-0": {"": "./classes"}
+	}
+}

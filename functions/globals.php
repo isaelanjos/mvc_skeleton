@@ -12,12 +12,3 @@ function write_log()
 {
 	return;
 }
-
-function check_session_login()
-{
-	if (isset($_SESSION['key']) && !empty($_SESSION['key']) && is_array($_SESSION['key']) && ($_SESSION['key'] === KEY)) {
-		header('location: ./home.php');
-	}
-}
-
-?>

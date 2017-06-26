@@ -9,23 +9,21 @@ isael.r.anjos@gmail.com
 session_start();
 
 require_once './config/config.php';
-require_once './vendor/autoload.php';
 require_once './functions/globals.php';
+require_once './vendor/autoload.php';
 
-if(!defined('DEBUG')) {
-	error_reporting(0);
-	ini_set("display_erros",0);
-} else {
+if(DEBUG == true) {
 	error_reporting(E_ALL);
 	ini_set("display_erros",1);
+} else {
+	error_reporting(0);
+	ini_set("display_erros",0);
 }
 
-$App = new MainClass();
+$Application = new \app\base\Application();
 
-if(DEBUG) {
+if(isset($Application) && DEBUG == true) {
 	echo '<pre>';
-	print_r( $App);
+	print_r($Application);
 	echo '</pre>';
 }
-
-?>

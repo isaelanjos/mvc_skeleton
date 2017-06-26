@@ -1,8 +1,10 @@
 <?php
-
 /**
-* Conexão Banco de Dados
-*/
+ * DB Connection
+ */
+
+namespace app\base;
+
 class DB
 {
 	

@@ -1,28 +1,26 @@
 <?php
 
-/**
-* 
-*/
-class LoginController extends MainController
+class LoginController extends \app\base\Controller
 {
-	public $title;
-	public $login_required = false;
-	public $level_required = 0;
-	public $params = array();
+    public function IndexAction()
+    {
 
-	public function IndexAction()
-	{
-		$this->title = 'Acesso ao Sistema';
-		$this->login_required = false;
-		$this->level_required = 0;
+        $control  = return $this->hasm
+        $control::class->implements->\app\base\Controller::cla
 
-		// $stm = $this->db->prepare('SELECT * FROM user');
-		// $stm->execute();
-		// $luser = $stm->fetchAll(PDO::FETCH_ASSOC);
-		
+        echo $control;
+        $this->render('idnex');
+        return;
+    }
 
-		print_r($luser);
+    public function LoginAction()
+    {
+        return;
+    }
 
-		require_once './views/login/index.php';
-	}
+    public function LogoutAction()
+    {
+        return;
+    }
+
 }

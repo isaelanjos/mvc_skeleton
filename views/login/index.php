@@ -1,6 +1,5 @@
 <?php 
 	if (!defined('KEY')) exit;
-	check_session_login();
 ?>
 <!DOCTYPE html>
 <html>
@@ -77,12 +76,12 @@
         <form class="form-signin" method="POST">
 			<h2 class="form-signin-heading" style="text-align: center">Acesso ao Sistema</h2>
 			<label class="sr-only">Usuário</label>
-			<input type="text" name="form_user" class="form-control" placeholder="Usuário" required autofocus>
+			<input type="text" name="form_login[username]" class="form-control" placeholder="Usuário" required autofocus>
 			<label class="sr-only">Senha</label>
-			<input type="password" name="form_password" class="form-control" placeholder="Senha" required>  
+			<input type="password" name="form_login[password]" class="form-control" placeholder="Senha" required>  
 			<div class="checkbox">
 				<label class="checkbox">
-					<input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Lembrar-me
+					<input type="checkbox" value="remember-me" id="rememberMe" name="form_login[rememberme]"> Lembrar-me
 				</label>	
 			</div>
 			<button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>

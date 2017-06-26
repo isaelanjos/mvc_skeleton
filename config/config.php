@@ -14,16 +14,14 @@ define('MAINTENCE',false);
 
 //Host
 define('HOSTNAME','127.0.0.1');
-define('HOME_URL','http://127.0.0.1/');
-define('LOGIN_URL','');
 
 //Path
-define('DIR','/myproject');
-define('PATH','/mvc_skeleton');
-define('ABSPATH',DIR.PATH);
+define('DIR','');
+define('PATH','');
+define('ABSPATH','');
 
-define('PATHLOG','/log');
-define('ABSLOG',ABSPATH.PATHLOG);
+define('PATHLOG','');
+define('ABSLOG','');
 
 //Timezone
 define('TIMEZONE','America/Manaus');
@@ -49,5 +47,3 @@ define('DB_PASSWORD','dbpass');
 define('LDAP_SERVER', '');
 define('LDAP_PORT', '389');
 define('LDAP_DN', 'ou=Usuarios,dc=,dc=,dc=,dc=');
-
-?>

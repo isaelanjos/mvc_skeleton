@@ -3,9 +3,10 @@
     "description": "Skel MVC Default",
     "type": "project",
     "require": {
-        "twbs/bootstrap": "^3.3",
-        "components/jquery": "^3.2",
-        "doctrine/orm": "^2.5"
+      "twbs/bootstrap": "^3.3",
+      "components/jquery": "^3.2",
+      "doctrine/orm": "^2.5",
+      "symfony/yaml": "^3.3"
     },
     "authors": [
         {
@@ -14,8 +15,12 @@
         }
     ],
     "minimum-stability": "stable",
-    "autoload":
-	{
-		"psr-0": {"": "./classes"}
-	}
+    "bin-dir": "./bin",
+    "autoload": {
+      "psr-4": {
+        "app\\base\\": "./base",
+        "app\\entity\\": "./entity"
+      }
+    }
+
 }
